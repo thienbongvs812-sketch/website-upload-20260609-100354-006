@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影视排行榜-国产影视资源库</title>
+    <meta name="description" content="国产电影电视剧大全排行榜，精选高热度高清电影与电视剧在线观看资源。">
+    <meta name="keywords" content="国产电影电视剧大全 - 免费高清在线观看平台-影视资源库,国产,视频,免费,在线观看,高清,影视大全,排行榜,热门电影,热播电视剧">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="./index.html" class="logo" aria-label="国产影视资源库首页"><span>国产影视资源库</span></a>
+        <nav class="desktop-nav"><a href="./index.html" class="">首页</a><a href="./categories.html" class="">分类</a><a href="./ranking.html" class="active">排行榜</a><a href="./search.html" class="">搜索</a></nav>
+        <button class="mobile-toggle" type="button" aria-label="展开导航" data-mobile-toggle><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" data-mobile-nav><a href="./index.html" class="">首页</a><a href="./categories.html" class="">分类</a><a href="./ranking.html" class="active">排行榜</a><a href="./search.html" class="">搜索</a></nav>
+</header>
+<main class="page-shell" data-filter-scope>
+    <nav class="breadcrumb" aria-label="当前位置"><a href="./index.html">首页</a><span>/</span><strong>排行榜</strong></nav>
+    <section class="page-title">
+        <h1>影视排行榜</h1>
+        <p>按热度、年份与片库推荐权重展示高关注影片，包含电影、电视剧、动画、纪录与多类型影视内容。</p>
+    </section>
+    <div class="filter-panel">
+    <div class="filter-bar">
+        <input class="site-search" type="search" placeholder="搜索片名、地区、年份、类型或标签" aria-label="搜索影片">
+        <select class="filter-select" data-filter-key="category" aria-label="按分类筛选">
+            <option value="">全部分类</option>
+            <option value="精选影库">精选影库</option><option value="华语剧场">华语剧场</option><option value="热播剧集">热播剧集</option><option value="动作冒险">动作冒险</option><option value="爱情剧情">爱情剧情</option><option value="悬疑犯罪">悬疑犯罪</option><option value="喜剧欢乐">喜剧欢乐</option><option value="科幻奇幻">科幻奇幻</option><option value="纪录人文">纪录人文</option><option value="动漫动画">动漫动画</option>
+        </select>
+        <select class="filter-select" data-filter-key="type" aria-label="按类型筛选">
+            <option value="">全部类型</option>
+            <option value="Movie">Movie</option><option value="OVA">OVA</option><option value="TV">TV</option><option value="TV Series">TV Series</option><option value="TV 动画">TV 动画</option><option value="TV剧集">TV剧集</option><option value="TV动画">TV动画</option><option value="剧情片">剧情片</option><option value="剧集">剧集</option><option value="剧集 / 真人秀（伪纪录片）">剧集 / 真人秀（伪纪录片）</option><option value="剧集 / 短剧">剧集 / 短剧</option><option value="剧集 剧情、家庭">剧集 剧情、家庭</option><option value="剧集 犯罪, 喜剧">剧集 犯罪, 喜剧</option><option value="剧集/动画">剧集/动画</option><option value="剧集/纪录片">剧集/纪录片</option><option value="剧集/综艺/短剧">剧集/综艺/短剧</option><option value="剧集（迷你剧）">剧集（迷你剧）</option><option value="动作电影">动作电影</option><option value="动漫">动漫</option><option value="动画">动画</option><option value="动画 / OVA">动画 / OVA</option><option value="动画 / 剧集">动画 / 剧集</option><option value="动画/奇幻冒险">动画/奇幻冒险</option><option value="动画剧集">动画剧集</option><option value="动画剧集 (12集)">动画剧集 (12集)</option><option value="动画电影">动画电影</option><option value="动画短片">动画短片</option><option value="情景喜剧">情景喜剧</option><option value="特摄剧集">特摄剧集</option><option value="电影">电影</option><option value="电影 (动画)">电影 (动画)</option><option value="电影 / 动画">电影 / 动画</option><option value="电影 / 纪录片">电影 / 纪录片</option><option value="电影 惊悚, 冒险">电影 惊悚, 冒险</option><option value="电影/动画">电影/动画</option><option value="电视剧">电视剧</option><option value="电视剧 / 剧集">电视剧 / 剧集</option><option value="电视剧 / 单元剧">电视剧 / 单元剧</option><option value="电视剧 / 古装">电视剧 / 古装</option><option value="电视剧集">电视剧集</option><option value="短剧">短剧</option><option value="短剧/网络剧">短剧/网络剧</option><option value="纪录片">纪录片</option><option value="综艺">综艺</option><option value="综艺 / 剧集">综艺 / 剧集</option><option value="综艺 / 电影">综艺 / 电影</option><option value="综艺/剧集">综艺/剧集</option><option value="综艺/特别节目">综艺/特别节目</option><option value="综艺/电影">综艺/电影</option><option value="综艺节目">综艺节目</option><option value="网剧">网剧</option><option value="网剧 / 爱情">网剧 / 爱情</option><option value="网络剧">网络剧</option><option value="网络电影">网络电影</option><option value="脱口秀特辑">脱口秀特辑</option>
+        </select>
+        <select class="filter-select" data-filter-key="year" aria-label="按年份筛选">
+            <option value="">全部年份</option>
+            <option value="2029">2029</option><option value="2028">2028</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option>
+        </select>
+    </div>
+</div>
+    <section class="rank-list">
+        <article class="rank-card movie-card" data-title="白色酢浆草" data-year="2029" data-type="电影" data-region="中国大陆" data-tags="留守儿童，植物，治愈，诗意" data-category="纪录人文">
+    <a href="./movie-363.html" class="rank-link">
+        <b class="rank-number">1</b>
+        <img src="./63.jpg" alt="白色酢浆草" loading="lazy">
+        <span class="rank-info">
+            <strong>白色酢浆草</strong>
+            <small>2029 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="亚历山大内夫斯基" data-year="2029" data-type="电影" data-region="俄罗斯" data-tags="沙俄历史，军事天才，史诗战争，民族英雄" data-category="喜剧欢乐">
+    <a href="./movie-1225.html" class="rank-link">
+        <b class="rank-number">2</b>
+        <img src="./25.jpg" alt="亚历山大内夫斯基" loading="lazy">
+        <span class="rank-info">
+            <strong>亚历山大内夫斯基</strong>
+            <small>2029 · 俄罗斯 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="极限特工:终极回归" data-year="2029" data-type="电影" data-region="美国" data-tags="特工，极限运动，爽片" data-category="科幻奇幻">
+    <a href="./movie-1813.html" class="rank-link">
+        <b class="rank-number">3</b>
+        <img src="./13.jpg" alt="极限特工:终极回归" loading="lazy">
+        <span class="rank-info">
+            <strong>极限特工:终极回归</strong>
+            <small>2029 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="上海滩喋血枭雄" data-year="2028" data-type="电影" data-region="中国大陆" data-tags="民国，法租界，枪战，兄弟反目" data-category="悬疑犯罪">
+    <a href="./movie-240.html" class="rank-link">
+        <b class="rank-number">4</b>
+        <img src="./90.jpg" alt="上海滩喋血枭雄" loading="lazy">
+        <span class="rank-info">
+            <strong>上海滩喋血枭雄</strong>
+            <small>2028 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="农民" data-year="2028" data-type="电影" data-region="波兰 / 立陶宛" data-tags="手绘油画，封建压迫，乡村女性，四季轮回" data-category="精选影库">
+    <a href="./movie-435.html" class="rank-link">
+        <b class="rank-number">5</b>
+        <img src="./135.jpg" alt="农民" loading="lazy">
+        <span class="rank-info">
+            <strong>农民</strong>
+            <small>2028 · 波兰 / 立陶宛 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="千钧。一发" data-year="2028" data-type="电影" data-region="中国大陆" data-tags="拆弹专家，限时营救，密室逃脱，城市危机" data-category="科幻奇幻">
+    <a href="./movie-1119.html" class="rank-link">
+        <b class="rank-number">6</b>
+        <img src="./69.jpg" alt="千钧。一发" loading="lazy">
+        <span class="rank-info">
+            <strong>千钧。一发</strong>
+            <small>2028 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="印第安纳的蒙罗维亚" data-year="2028" data-type="电影" data-region="美国" data-tags="小镇疑云，冷峻美学，独角戏，硬汉侦探，道德模糊" data-category="热播剧集">
+    <a href="./movie-1994.html" class="rank-link">
+        <b class="rank-number">7</b>
+        <img src="./44.jpg" alt="印第安纳的蒙罗维亚" loading="lazy">
+        <span class="rank-info">
+            <strong>印第安纳的蒙罗维亚</strong>
+            <small>2028 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="大宋有奇案" data-year="2027" data-type="电视剧" data-region="中国" data-tags="法医，推理，权谋，女仵作" data-category="悬疑犯罪">
+    <a href="./movie-7.html" class="rank-link">
+        <b class="rank-number">8</b>
+        <img src="./7.jpg" alt="大宋有奇案" loading="lazy">
+        <span class="rank-info">
+            <strong>大宋有奇案</strong>
+            <small>2027 · 中国 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="东方卡萨布兰卡" data-year="2027" data-type="电影" data-region="中国大陆" data-tags="民国，上海，间谍，三角恋，咖啡馆" data-category="科幻奇幻">
+    <a href="./movie-38.html" class="rank-link">
+        <b class="rank-number">9</b>
+        <img src="./38.jpg" alt="东方卡萨布兰卡" loading="lazy">
+        <span class="rank-info">
+            <strong>东方卡萨布兰卡</strong>
+            <small>2027 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="七个毕业生" data-year="2027" data-type="电视剧" data-region="美国" data-tags="中年危机，同学聚会，阶级跃迁" data-category="华语剧场">
+    <a href="./movie-49.html" class="rank-link">
+        <b class="rank-number">10</b>
+        <img src="./49.jpg" alt="七个毕业生" loading="lazy">
+        <span class="rank-info">
+            <strong>七个毕业生</strong>
+            <small>2027 · 美国 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="滑车" data-year="2027" data-type="电影" data-region="中国大陆" data-tags="废弃游乐场，矿车杀人案，时间循环" data-category="爱情剧情">
+    <a href="./movie-79.html" class="rank-link">
+        <b class="rank-number">11</b>
+        <img src="./79.jpg" alt="滑车" loading="lazy">
+        <span class="rank-info">
+            <strong>滑车</strong>
+            <small>2027 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="美味秘方" data-year="2027" data-type="电影" data-region="中国" data-tags="复仇，味觉天才，黑暗料理，行业揭秘" data-category="动作冒险">
+    <a href="./movie-167.html" class="rank-link">
+        <b class="rank-number">12</b>
+        <img src="./17.jpg" alt="美味秘方" loading="lazy">
+        <span class="rank-info">
+            <strong>美味秘方</strong>
+            <small>2027 · 中国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="战国妖姬" data-year="2027" data-type="动画" data-region="日本" data-tags="战国，女忍者，妖术，乱世，百合" data-category="科幻奇幻">
+    <a href="./movie-310.html" class="rank-link">
+        <b class="rank-number">13</b>
+        <img src="./10.jpg" alt="战国妖姬" loading="lazy">
+        <span class="rank-info">
+            <strong>战国妖姬</strong>
+            <small>2027 · 日本 · 动画</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="缔创学校" data-year="2027" data-type="电视剧" data-region="中国大陆" data-tags="学生创业，互联网+，00后整顿职场，梦想与现实" data-category="精选影库">
+    <a href="./movie-417.html" class="rank-link">
+        <b class="rank-number">14</b>
+        <img src="./117.jpg" alt="缔创学校" loading="lazy">
+        <span class="rank-info">
+            <strong>缔创学校</strong>
+            <small>2027 · 中国大陆 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="兵权" data-year="2027" data-type="剧集" data-region="中国大陆" data-tags="五代十国，杯酒释兵权前传，禁军" data-category="悬疑犯罪">
+    <a href="./movie-460.html" class="rank-link">
+        <b class="rank-number">15</b>
+        <img src="./10.jpg" alt="兵权" loading="lazy">
+        <span class="rank-info">
+            <strong>兵权</strong>
+            <small>2027 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="313套房" data-year="2027" data-type="电视剧" data-region="中国大陆" data-tags="公寓，邻居，密室，轮回，人性" data-category="喜剧欢乐">
+    <a href="./movie-482.html" class="rank-link">
+        <b class="rank-number">16</b>
+        <img src="./32.jpg" alt="313套房" loading="lazy">
+        <span class="rank-info">
+            <strong>313套房</strong>
+            <small>2027 · 中国大陆 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="孝庄秘史" data-year="2027" data-type="剧集" data-region="中国大陆" data-tags="清初，女性，政治，情感，史诗" data-category="精选影库">
+    <a href="./movie-608.html" class="rank-link">
+        <b class="rank-number">17</b>
+        <img src="./8.jpg" alt="孝庄秘史" loading="lazy">
+        <span class="rank-info">
+            <strong>孝庄秘史</strong>
+            <small>2027 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="来去美国2" data-year="2027" data-type="电影" data-region="美国" data-tags="续集，非法移民，逆向文化冲击，公路" data-category="纪录人文">
+    <a href="./movie-638.html" class="rank-link">
+        <b class="rank-number">18</b>
+        <img src="./38.jpg" alt="来去美国2" loading="lazy">
+        <span class="rank-info">
+            <strong>来去美国2</strong>
+            <small>2027 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="引力弹弓" data-year="2027" data-type="电影" data-region="美国" data-tags="木星探测，引力弹弓效应，空间站危机，父子和解" data-category="爱情剧情">
+    <a href="./movie-675.html" class="rank-link">
+        <b class="rank-number">19</b>
+        <img src="./75.jpg" alt="引力弹弓" loading="lazy">
+        <span class="rank-info">
+            <strong>引力弹弓</strong>
+            <small>2027 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="世界大洪水" data-year="2027" data-type="电影" data-region="美国" data-tags="末世，洪水，诺亚方舟，基因库，人性考验" data-category="纪录人文">
+    <a href="./movie-733.html" class="rank-link">
+        <b class="rank-number">20</b>
+        <img src="./133.jpg" alt="世界大洪水" loading="lazy">
+        <span class="rank-info">
+            <strong>世界大洪水</strong>
+            <small>2027 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="八角笼" data-year="2027" data-type="电视剧" data-region="美国" data-tags="MMA，女性格斗，监狱风云，自我救赎" data-category="热播剧集">
+    <a href="./movie-856.html" class="rank-link">
+        <b class="rank-number">21</b>
+        <img src="./106.jpg" alt="八角笼" loading="lazy">
+        <span class="rank-info">
+            <strong>八角笼</strong>
+            <small>2027 · 美国 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="奥迈耶的痴梦" data-year="2027" data-type="电影" data-region="新加坡/马来西亚" data-tags="殖民，橡胶园，混血，黄昏恋" data-category="悬疑犯罪">
+    <a href="./movie-900.html" class="rank-link">
+        <b class="rank-number">22</b>
+        <img src="./150.jpg" alt="奥迈耶的痴梦" loading="lazy">
+        <span class="rank-info">
+            <strong>奥迈耶的痴梦</strong>
+            <small>2027 · 新加坡/马来西亚 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="圈子之德州风云" data-year="2027" data-type="剧集" data-region="美国" data-tags="德州扑克，洗钱，地下赌场" data-category="动作冒险">
+    <a href="./movie-1281.html" class="rank-link">
+        <b class="rank-number">23</b>
+        <img src="./81.jpg" alt="圈子之德州风云" loading="lazy">
+        <span class="rank-info">
+            <strong>圈子之德州风云</strong>
+            <small>2027 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="邪恶力量" data-year="2027" data-type="剧集" data-region="美国" data-tags="超自然，重启，驱魔，公路片，兄弟情" data-category="华语剧场">
+    <a href="./movie-1467.html" class="rank-link">
+        <b class="rank-number">24</b>
+        <img src="./117.jpg" alt="邪恶力量" loading="lazy">
+        <span class="rank-info">
+            <strong>邪恶力量</strong>
+            <small>2027 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="九凤家的锦鲤喵殿下" data-year="2027" data-type="剧集" data-region="中国大陆" data-tags="萌宠，锦鲤，甜宠，王爷变猫" data-category="悬疑犯罪">
+    <a href="./movie-1480.html" class="rank-link">
+        <b class="rank-number">25</b>
+        <img src="./130.jpg" alt="九凤家的锦鲤喵殿下" loading="lazy">
+        <span class="rank-info">
+            <strong>九凤家的锦鲤喵殿下</strong>
+            <small>2027 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="绝命复制人" data-year="2027" data-type="电影" data-region="美国" data-tags="克隆，追杀，身份" data-category="动作冒险">
+    <a href="./movie-1512.html" class="rank-link">
+        <b class="rank-number">26</b>
+        <img src="./12.jpg" alt="绝命复制人" loading="lazy">
+        <span class="rank-info">
+            <strong>绝命复制人</strong>
+            <small>2027 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="军人魂" data-year="2027" data-type="电影" data-region="中国大陆" data-tags="抗日战争，狙击手，兄弟情，壮烈牺牲" data-category="热播剧集">
+    <a href="./movie-1522.html" class="rank-link">
+        <b class="rank-number">27</b>
+        <img src="./22.jpg" alt="军人魂" loading="lazy">
+        <span class="rank-info">
+            <strong>军人魂</strong>
+            <small>2027 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="无口的森田小姐第二季" data-year="2027" data-type="TV动画" data-region="日本" data-tags="社恐，内心戏，治愈，续作" data-category="动作冒险">
+    <a href="./movie-1575.html" class="rank-link">
+        <b class="rank-number">28</b>
+        <img src="./75.jpg" alt="无口的森田小姐第二季" loading="lazy">
+        <span class="rank-info">
+            <strong>无口的森田小姐第二季</strong>
+            <small>2027 · 日本 · TV动画</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="鬼界超级混蛋" data-year="2027" data-type="动画剧集" data-region="日本" data-tags="地狱，叛乱，摇滚，六道轮回，反英雄" data-category="动漫动画">
+    <a href="./movie-1615.html" class="rank-link">
+        <b class="rank-number">29</b>
+        <img src="./115.jpg" alt="鬼界超级混蛋" loading="lazy">
+        <span class="rank-info">
+            <strong>鬼界超级混蛋</strong>
+            <small>2027 · 日本 · 动画剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="老板渡假去2" data-year="2027" data-type="电影" data-region="美国" data-tags="续集，度假灾难，黑帮，乌龙" data-category="科幻奇幻">
+    <a href="./movie-1629.html" class="rank-link">
+        <b class="rank-number">30</b>
+        <img src="./129.jpg" alt="老板渡假去2" loading="lazy">
+        <span class="rank-info">
+            <strong>老板渡假去2</strong>
+            <small>2027 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="动态漫画·开局强吻裂口女" data-year="2027" data-type="剧集" data-region="日本" data-tags="动态漫画，都市传说，反套路，沙雕，逆袭" data-category="纪录人文">
+    <a href="./movie-1696.html" class="rank-link">
+        <b class="rank-number">31</b>
+        <img src="./46.jpg" alt="动态漫画·开局强吻裂口女" loading="lazy">
+        <span class="rank-info">
+            <strong>动态漫画·开局强吻裂口女</strong>
+            <small>2027 · 日本 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="僵尸儿童" data-year="2027" data-type="电影" data-region="法国 / 海地" data-tags="巫毒，还魂尸，殖民历史，儿童创伤，政治隐喻" data-category="热播剧集">
+    <a href="./movie-1707.html" class="rank-link">
+        <b class="rank-number">32</b>
+        <img src="./57.jpg" alt="僵尸儿童" loading="lazy">
+        <span class="rank-info">
+            <strong>僵尸儿童</strong>
+            <small>2027 · 法国 / 海地 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="尼斯警花" data-year="2027" data-type="剧集" data-region="法国" data-tags="女警搭档，蔚蓝海岸，轻松探案，法式幽默" data-category="动作冒险">
+    <a href="./movie-1708.html" class="rank-link">
+        <b class="rank-number">33</b>
+        <img src="./58.jpg" alt="尼斯警花" loading="lazy">
+        <span class="rank-info">
+            <strong>尼斯警花</strong>
+            <small>2027 · 法国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="烽火赤焰万里情" data-year="2027" data-type="电影" data-region="美国, 英国" data-tags="二战，记者，飞行员，跨国恋，战火" data-category="喜剧欢乐">
+    <a href="./movie-1714.html" class="rank-link">
+        <b class="rank-number">34</b>
+        <img src="./64.jpg" alt="烽火赤焰万里情" loading="lazy">
+        <span class="rank-info">
+            <strong>烽火赤焰万里情</strong>
+            <small>2027 · 美国, 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="笑傲江湖2：东方不败" data-year="2027" data-type="电影" data-region="中国香港" data-tags="东方不败，重生，性转，江湖权谋，经典重启" data-category="热播剧集">
+    <a href="./movie-1885.html" class="rank-link">
+        <b class="rank-number">35</b>
+        <img src="./85.jpg" alt="笑傲江湖2：东方不败" loading="lazy">
+        <span class="rank-info">
+            <strong>笑傲江湖2：东方不败</strong>
+            <small>2027 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="007大破天幕杀机" data-year="2027" data-type="电影" data-region="英国" data-tags="间谍，AI，量子，反套路，邦德" data-category="科幻奇幻">
+    <a href="./movie-1922.html" class="rank-link">
+        <b class="rank-number">36</b>
+        <img src="./122.jpg" alt="007大破天幕杀机" loading="lazy">
+        <span class="rank-info">
+            <strong>007大破天幕杀机</strong>
+            <small>2027 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="再见玛丽·包萍" data-year="2027" data-type="电影" data-region="英国" data-tags="魔法保姆，反童话，中年危机，原生家庭，告别" data-category="悬疑犯罪">
+    <a href="./movie-1933.html" class="rank-link">
+        <b class="rank-number">37</b>
+        <img src="./133.jpg" alt="再见玛丽·包萍" loading="lazy">
+        <span class="rank-info">
+            <strong>再见玛丽·包萍</strong>
+            <small>2027 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="宝石迷踪" data-year="2027" data-type="电影" data-region="印度" data-tags="神秘宝石，家族诅咒，火车追击，宝莱坞风格，多重反转" data-category="华语剧场">
+    <a href="./movie-1937.html" class="rank-link">
+        <b class="rank-number">38</b>
+        <img src="./137.jpg" alt="宝石迷踪" loading="lazy">
+        <span class="rank-info">
+            <strong>宝石迷踪</strong>
+            <small>2027 · 印度 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="冰冻星球 第二部" data-year="2027" data-type="动画剧集" data-region="美国" data-tags="太空歌剧，后末日，新家园，父子传承，外星生态" data-category="华语剧场">
+    <a href="./movie-1989.html" class="rank-link">
+        <b class="rank-number">39</b>
+        <img src="./39.jpg" alt="冰冻星球 第二部" loading="lazy">
+        <span class="rank-info">
+            <strong>冰冻星球 第二部</strong>
+            <small>2027 · 美国 · 动画剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="宁静的夏天" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="留守儿童，支教，治愈，夏日，温情" data-category="动作冒险">
+    <a href="./movie-22.html" class="rank-link">
+        <b class="rank-number">40</b>
+        <img src="./22.jpg" alt="宁静的夏天" loading="lazy">
+        <span class="rank-info">
+            <strong>宁静的夏天</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="高地战" data-year="2026" data-type="剧集" data-region="韩国" data-tags="朝鲜战争，争夺战，人性异化，停战前夕，兄弟相残" data-category="华语剧场">
+    <a href="./movie-42.html" class="rank-link">
+        <b class="rank-number">41</b>
+        <img src="./42.jpg" alt="高地战" loading="lazy">
+        <span class="rank-info">
+            <strong>高地战</strong>
+            <small>2026 · 韩国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="已成往事" data-year="2026" data-type="电影" data-region="中国香港" data-tags="中年危机，初恋重逢，遗憾美学，胶片质感，香港变迁" data-category="热播剧集">
+    <a href="./movie-46.html" class="rank-link">
+        <b class="rank-number">42</b>
+        <img src="./46.jpg" alt="已成往事" loading="lazy">
+        <span class="rank-info">
+            <strong>已成往事</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="命运迷宫粤语" data-year="2026" data-type="电影" data-region="中国香港" data-tags="粤语原声，平行时空，银行劫案" data-category="纪录人文">
+    <a href="./movie-57.html" class="rank-link">
+        <b class="rank-number">43</b>
+        <img src="./57.jpg" alt="命运迷宫粤语" loading="lazy">
+        <span class="rank-info">
+            <strong>命运迷宫粤语</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="复仇战将" data-year="2026" data-type="电影" data-region="泰国" data-tags="泰拳，复仇，器官贩卖，孤儿，暴力美学" data-category="爱情剧情">
+    <a href="./movie-65.html" class="rank-link">
+        <b class="rank-number">44</b>
+        <img src="./65.jpg" alt="复仇战将" loading="lazy">
+        <span class="rank-info">
+            <strong>复仇战将</strong>
+            <small>2026 · 泰国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="红蓝大作战第十七季" data-year="2026" data-type="剧集" data-region="美国" data-tags="色彩战争，反乌托邦，脑洞大开，小队战术" data-category="精选影库">
+    <a href="./movie-66.html" class="rank-link">
+        <b class="rank-number">45</b>
+        <img src="./66.jpg" alt="红蓝大作战第十七季" loading="lazy">
+        <span class="rank-info">
+            <strong>红蓝大作战第十七季</strong>
+            <small>2026 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="大内密探灵灵狗" data-year="2026" data-type="电影" data-region="中国香港 / 中国大陆" data-tags="无厘头，夺宝，宫斗" data-category="纪录人文">
+    <a href="./movie-70.html" class="rank-link">
+        <b class="rank-number">46</b>
+        <img src="./70.jpg" alt="大内密探灵灵狗" loading="lazy">
+        <span class="rank-info">
+            <strong>大内密探灵灵狗</strong>
+            <small>2026 · 中国香港 / 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="滇越铁路·生命的故事" data-year="2026" data-type="纪录片" data-region="中国大陆" data-tags="铁路，二战，移民，口述史" data-category="动作冒险">
+    <a href="./movie-88.html" class="rank-link">
+        <b class="rank-number">47</b>
+        <img src="./88.jpg" alt="滇越铁路·生命的故事" loading="lazy">
+        <span class="rank-info">
+            <strong>滇越铁路·生命的故事</strong>
+            <small>2026 · 中国大陆 · 纪录片</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="淑女宠爱" data-year="2026" data-type="剧集" data-region="韩国" data-tags="契约恋爱，互换身体，财阀千金，野蛮女友" data-category="悬疑犯罪">
+    <a href="./movie-89.html" class="rank-link">
+        <b class="rank-number">48</b>
+        <img src="./89.jpg" alt="淑女宠爱" loading="lazy">
+        <span class="rank-info">
+            <strong>淑女宠爱</strong>
+            <small>2026 · 韩国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="江湖儿女" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="黑帮，90年代，兄弟情" data-category="纪录人文">
+    <a href="./movie-105.html" class="rank-link">
+        <b class="rank-number">49</b>
+        <img src="./105.jpg" alt="江湖儿女" loading="lazy">
+        <span class="rank-info">
+            <strong>江湖儿女</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="黑色达摩" data-year="2026" data-type="剧集" data-region="韩国" data-tags="以暴制暴，宗教元素，复仇，爽剧" data-category="动作冒险">
+    <a href="./movie-110.html" class="rank-link">
+        <b class="rank-number">50</b>
+        <img src="./110.jpg" alt="黑色达摩" loading="lazy">
+        <span class="rank-info">
+            <strong>黑色达摩</strong>
+            <small>2026 · 韩国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="嘘，国王在冬眠" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="童话，政治，暗黑，反转" data-category="爱情剧情">
+    <a href="./movie-111.html" class="rank-link">
+        <b class="rank-number">51</b>
+        <img src="./111.jpg" alt="嘘，国王在冬眠" loading="lazy">
+        <span class="rank-info">
+            <strong>嘘，国王在冬眠</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="旺角黑夜" data-year="2026" data-type="电影" data-region="中国香港" data-tags="暴力美学，霓虹美学，寻人，黑吃黑，反转" data-category="悬疑犯罪">
+    <a href="./movie-117.html" class="rank-link">
+        <b class="rank-number">52</b>
+        <img src="./117.jpg" alt="旺角黑夜" loading="lazy">
+        <span class="rank-info">
+            <strong>旺角黑夜</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="爱情与信仰之第三者" data-year="2026" data-type="电影" data-region="印度" data-tags="宗教，三角恋，殉道，锡克教" data-category="爱情剧情">
+    <a href="./movie-118.html" class="rank-link">
+        <b class="rank-number">53</b>
+        <img src="./118.jpg" alt="爱情与信仰之第三者" loading="lazy">
+        <span class="rank-info">
+            <strong>爱情与信仰之第三者</strong>
+            <small>2026 · 印度 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="俾礼物定要恶作剧" data-year="2026" data-type="剧集" data-region="日本" data-tags="复仇，礼物交换，职场霸凌，惊悚反转" data-category="纪录人文">
+    <a href="./movie-131.html" class="rank-link">
+        <b class="rank-number">54</b>
+        <img src="./131.jpg" alt="俾礼物定要恶作剧" loading="lazy">
+        <span class="rank-info">
+            <strong>俾礼物定要恶作剧</strong>
+            <small>2026 · 日本 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="血的周末" data-year="2026" data-type="电影" data-region="美国" data-tags="度假村，密室，血浆片，反转，生存游戏" data-category="动漫动画">
+    <a href="./movie-149.html" class="rank-link">
+        <b class="rank-number">55</b>
+        <img src="./149.jpg" alt="血的周末" loading="lazy">
+        <span class="rank-info">
+            <strong>血的周末</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="攻击13号警局" data-year="2026" data-type="电影" data-region="美国" data-tags="警匪，困兽之斗，拆迁，黑警" data-category="科幻奇幻">
+    <a href="./movie-151.html" class="rank-link">
+        <b class="rank-number">56</b>
+        <img src="./1.jpg" alt="攻击13号警局" loading="lazy">
+        <span class="rank-info">
+            <strong>攻击13号警局</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="罪夜无间" data-year="2026" data-type="剧集" data-region="中国" data-tags="连环杀人，夜店文化，双面人生" data-category="精选影库">
+    <a href="./movie-158.html" class="rank-link">
+        <b class="rank-number">57</b>
+        <img src="./8.jpg" alt="罪夜无间" loading="lazy">
+        <span class="rank-info">
+            <strong>罪夜无间</strong>
+            <small>2026 · 中国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="小脚板走天涯4" data-year="2026" data-type="电影" data-region="美国" data-tags="恐龙，公路片，成长，续集" data-category="华语剧场">
+    <a href="./movie-165.html" class="rank-link">
+        <b class="rank-number">58</b>
+        <img src="./15.jpg" alt="小脚板走天涯4" loading="lazy">
+        <span class="rank-info">
+            <strong>小脚板走天涯4</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="第三代" data-year="2026" data-type="剧集" data-region="日本" data-tags="家族，传承，矛盾" data-category="纪录人文">
+    <a href="./movie-166.html" class="rank-link">
+        <b class="rank-number">59</b>
+        <img src="./16.jpg" alt="第三代" loading="lazy">
+        <span class="rank-info">
+            <strong>第三代</strong>
+            <small>2026 · 日本 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="一刀倾城" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="刀客，复仇，水墨美学，反战" data-category="动作冒险">
+    <a href="./movie-173.html" class="rank-link">
+        <b class="rank-number">60</b>
+        <img src="./23.jpg" alt="一刀倾城" loading="lazy">
+        <span class="rank-info">
+            <strong>一刀倾城</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="将军的儿子2" data-year="2026" data-type="电影" data-region="韩国" data-tags="复仇，权谋，冷兵器，父子" data-category="热播剧集">
+    <a href="./movie-176.html" class="rank-link">
+        <b class="rank-number">61</b>
+        <img src="./26.jpg" alt="将军的儿子2" loading="lazy">
+        <span class="rank-info">
+            <strong>将军的儿子2</strong>
+            <small>2026 · 韩国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="尸控扩散" data-year="2026" data-type="剧集" data-region="韩国" data-tags="丧尸，病毒变异，政府阴谋，隔离区，生存" data-category="动漫动画">
+    <a href="./movie-177.html" class="rank-link">
+        <b class="rank-number">62</b>
+        <img src="./27.jpg" alt="尸控扩散" loading="lazy">
+        <span class="rank-info">
+            <strong>尸控扩散</strong>
+            <small>2026 · 韩国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="凯萨拉" data-year="2026" data-type="电影" data-region="巴西" data-tags="黑奴后代，社区斗争，土地权" data-category="热播剧集">
+    <a href="./movie-189.html" class="rank-link">
+        <b class="rank-number">63</b>
+        <img src="./39.jpg" alt="凯萨拉" loading="lazy">
+        <span class="rank-info">
+            <strong>凯萨拉</strong>
+            <small>2026 · 巴西 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="超时空护卫队第一季" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="时间线，机甲，平行宇宙，团队" data-category="动漫动画">
+    <a href="./movie-204.html" class="rank-link">
+        <b class="rank-number">64</b>
+        <img src="./54.jpg" alt="超时空护卫队第一季" loading="lazy">
+        <span class="rank-info">
+            <strong>超时空护卫队第一季</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="提防小手" data-year="2026" data-type="电影" data-region="中国香港" data-tags="扒手，无厘头，黄金大劫案" data-category="精选影库">
+    <a href="./movie-213.html" class="rank-link">
+        <b class="rank-number">65</b>
+        <img src="./63.jpg" alt="提防小手" loading="lazy">
+        <span class="rank-info">
+            <strong>提防小手</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="莉莉卡与魔幻魔法学校" data-year="2026" data-type="动画电影" data-region="日本" data-tags="魔法学校，友情，成长，废柴逆袭，治愈" data-category="爱情剧情">
+    <a href="./movie-235.html" class="rank-link">
+        <b class="rank-number">66</b>
+        <img src="./85.jpg" alt="莉莉卡与魔幻魔法学校" loading="lazy">
+        <span class="rank-info">
+            <strong>莉莉卡与魔幻魔法学校</strong>
+            <small>2026 · 日本 · 动画电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="灵肉交响曲" data-year="2026" data-type="电影" data-region="加拿大" data-tags="意识上传，伦理，音乐" data-category="热播剧集">
+    <a href="./movie-243.html" class="rank-link">
+        <b class="rank-number">67</b>
+        <img src="./93.jpg" alt="灵肉交响曲" loading="lazy">
+        <span class="rank-info">
+            <strong>灵肉交响曲</strong>
+            <small>2026 · 加拿大 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="李慧娘" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="女鬼，复仇，戏曲改编" data-category="悬疑犯罪">
+    <a href="./movie-247.html" class="rank-link">
+        <b class="rank-number">68</b>
+        <img src="./97.jpg" alt="李慧娘" loading="lazy">
+        <span class="rank-info">
+            <strong>李慧娘</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="污碳" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="碳交易黑幕，近未来科幻，企业阴谋，硬核反转" data-category="科幻奇幻">
+    <a href="./movie-254.html" class="rank-link">
+        <b class="rank-number">69</b>
+        <img src="./104.jpg" alt="污碳" loading="lazy">
+        <span class="rank-info">
+            <strong>污碳</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="阿加莎与谋杀的真谛" data-year="2026" data-type="剧集" data-region="英国" data-tags="本格推理，阿加莎·克里斯蒂，双重叙事，女性视角" data-category="科幻奇幻">
+    <a href="./movie-258.html" class="rank-link">
+        <b class="rank-number">70</b>
+        <img src="./108.jpg" alt="阿加莎与谋杀的真谛" loading="lazy">
+        <span class="rank-info">
+            <strong>阿加莎与谋杀的真谛</strong>
+            <small>2026 · 英国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="大法师传奇" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="魔法，穿越，学院，西幻" data-category="动作冒险">
+    <a href="./movie-266.html" class="rank-link">
+        <b class="rank-number">71</b>
+        <img src="./116.jpg" alt="大法师传奇" loading="lazy">
+        <span class="rank-info">
+            <strong>大法师传奇</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="中国合伙人2" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="互联网时代，90年代，兄弟反目，上市，理想主义" data-category="爱情剧情">
+    <a href="./movie-270.html" class="rank-link">
+        <b class="rank-number">72</b>
+        <img src="./120.jpg" alt="中国合伙人2" loading="lazy">
+        <span class="rank-info">
+            <strong>中国合伙人2</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="魔界重生" data-year="2026" data-type="电影" data-region="美国" data-tags="暗黑，魔法，复活，史诗" data-category="精选影库">
+    <a href="./movie-285.html" class="rank-link">
+        <b class="rank-number">73</b>
+        <img src="./135.jpg" alt="魔界重生" loading="lazy">
+        <span class="rank-info">
+            <strong>魔界重生</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="凌天独尊" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="废材逆袭，宗门天才，上古血脉，修炼等级，打脸爽剧" data-category="纪录人文">
+    <a href="./movie-295.html" class="rank-link">
+        <b class="rank-number">74</b>
+        <img src="./145.jpg" alt="凌天独尊" loading="lazy">
+        <span class="rank-info">
+            <strong>凌天独尊</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="鱿鱼仔的乡土生活第八季" data-year="2026" data-type="动画剧集" data-region="美国" data-tags="美式动画，返乡，黑色幽默，中年危机" data-category="科幻奇幻">
+    <a href="./movie-296.html" class="rank-link">
+        <b class="rank-number">75</b>
+        <img src="./146.jpg" alt="鱿鱼仔的乡土生活第八季" loading="lazy">
+        <span class="rank-info">
+            <strong>鱿鱼仔的乡土生活第八季</strong>
+            <small>2026 · 美国 · 动画剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="曲象丛生" data-year="2026" data-type="电视剧" data-region="中国" data-tags="大象迁徙，短剧，多线叙事" data-category="动漫动画">
+    <a href="./movie-299.html" class="rank-link">
+        <b class="rank-number">76</b>
+        <img src="./149.jpg" alt="曲象丛生" loading="lazy">
+        <span class="rank-info">
+            <strong>曲象丛生</strong>
+            <small>2026 · 中国 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="冲锋9号续集" data-year="2026" data-type="电影" data-region="香港" data-tags="飞虎队，续集，枪战，兄弟情" data-category="华语剧场">
+    <a href="./movie-305.html" class="rank-link">
+        <b class="rank-number">77</b>
+        <img src="./5.jpg" alt="冲锋9号续集" loading="lazy">
+        <span class="rank-info">
+            <strong>冲锋9号续集</strong>
+            <small>2026 · 香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="鲨卷风5：全球鲨暴" data-year="2026" data-type="电影" data-region="美国" data-tags="B级片，鲨鱼，龙卷风，恶搞" data-category="纪录人文">
+    <a href="./movie-307.html" class="rank-link">
+        <b class="rank-number">78</b>
+        <img src="./7.jpg" alt="鲨卷风5：全球鲨暴" loading="lazy">
+        <span class="rank-info">
+            <strong>鲨卷风5：全球鲨暴</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="恶爸临门" data-year="2026" data-type="电影" data-region="美国" data-tags="准女婿，硬汉老爸，反差萌，爆笑整蛊，温情" data-category="动漫动画">
+    <a href="./movie-323.html" class="rank-link">
+        <b class="rank-number">79</b>
+        <img src="./23.jpg" alt="恶爸临门" loading="lazy">
+        <span class="rank-info">
+            <strong>恶爸临门</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="超胆侠" data-year="2026" data-type="电影" data-region="美国" data-tags="盲人英雄，夜魔侠重启，街头暴力，地狱厨房" data-category="动漫动画">
+    <a href="./movie-324.html" class="rank-link">
+        <b class="rank-number">80</b>
+        <img src="./24.jpg" alt="超胆侠" loading="lazy">
+        <span class="rank-info">
+            <strong>超胆侠</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="黑帆第四季" data-year="2026" data-type="剧集" data-region="美国" data-tags="海盗，大结局，权力游戏，海战" data-category="科幻奇幻">
+    <a href="./movie-330.html" class="rank-link">
+        <b class="rank-number">81</b>
+        <img src="./30.jpg" alt="黑帆第四季" loading="lazy">
+        <span class="rank-info">
+            <strong>黑帆第四季</strong>
+            <small>2026 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="丫鬟不好惹" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="穿越，逆袭，爽剧，丫鬟翻身，权谋甜宠" data-category="精选影库">
+    <a href="./movie-334.html" class="rank-link">
+        <b class="rank-number">82</b>
+        <img src="./34.jpg" alt="丫鬟不好惹" loading="lazy">
+        <span class="rank-info">
+            <strong>丫鬟不好惹</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="穿越白色空间" data-year="2026" data-type="电影" data-region="瑞典 / 丹麦" data-tags="极简主义，意识上传，虚无宇宙，北欧冷感" data-category="科幻奇幻">
+    <a href="./movie-360.html" class="rank-link">
+        <b class="rank-number">83</b>
+        <img src="./60.jpg" alt="穿越白色空间" loading="lazy">
+        <span class="rank-info">
+            <strong>穿越白色空间</strong>
+            <small>2026 · 瑞典 / 丹麦 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="四十四只石狮子" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="古桥，石狮，机关，寻根，密码" data-category="科幻奇幻">
+    <a href="./movie-374.html" class="rank-link">
+        <b class="rank-number">84</b>
+        <img src="./74.jpg" alt="四十四只石狮子" loading="lazy">
+        <span class="rank-info">
+            <strong>四十四只石狮子</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="被掠夺的画作" data-year="2026" data-type="电影" data-region="法国 / 德国" data-tags="二战，纳粹，艺术，寻宝，身份之谜" data-category="喜剧欢乐">
+    <a href="./movie-386.html" class="rank-link">
+        <b class="rank-number">85</b>
+        <img src="./86.jpg" alt="被掠夺的画作" loading="lazy">
+        <span class="rank-info">
+            <strong>被掠夺的画作</strong>
+            <small>2026 · 法国 / 德国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="恐怖阴谋" data-year="2026" data-type="电影" data-region="美国" data-tags="邪教，密室，反转，血腥" data-category="悬疑犯罪">
+    <a href="./movie-387.html" class="rank-link">
+        <b class="rank-number">86</b>
+        <img src="./87.jpg" alt="恐怖阴谋" loading="lazy">
+        <span class="rank-info">
+            <strong>恐怖阴谋</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="看不见的敌人" data-year="2026" data-type="电影" data-region="英国" data-tags="量子，幽灵，小队，绝境，高概念" data-category="精选影库">
+    <a href="./movie-392.html" class="rank-link">
+        <b class="rank-number">87</b>
+        <img src="./92.jpg" alt="看不见的敌人" loading="lazy">
+        <span class="rank-info">
+            <strong>看不见的敌人</strong>
+            <small>2026 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="广岛别恋" data-year="2026" data-type="电影" data-region="法国 / 日本" data-tags="左岸派，记忆与遗忘，跨国恋，禁忌" data-category="纪录人文">
+    <a href="./movie-395.html" class="rank-link">
+        <b class="rank-number">88</b>
+        <img src="./95.jpg" alt="广岛别恋" loading="lazy">
+        <span class="rank-info">
+            <strong>广岛别恋</strong>
+            <small>2026 · 法国 / 日本 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="秘密" data-year="2026" data-type="电影" data-region="韩国" data-tags="小镇悬案，双胞胎诡计，全员说谎" data-category="热播剧集">
+    <a href="./movie-412.html" class="rank-link">
+        <b class="rank-number">89</b>
+        <img src="./112.jpg" alt="秘密" loading="lazy">
+        <span class="rank-info">
+            <strong>秘密</strong>
+            <small>2026 · 韩国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="超级迪克" data-year="2026" data-type="电视剧" data-region="美国" data-tags="超级英雄，恶搞，低配版，屌丝逆袭" data-category="科幻奇幻">
+    <a href="./movie-425.html" class="rank-link">
+        <b class="rank-number">90</b>
+        <img src="./125.jpg" alt="超级迪克" loading="lazy">
+        <span class="rank-info">
+            <strong>超级迪克</strong>
+            <small>2026 · 美国 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="找死来唬秀" data-year="2026" data-type="电影" data-region="美国" data-tags="直播，黑色幽默，网络暴力" data-category="纪录人文">
+    <a href="./movie-426.html" class="rank-link">
+        <b class="rank-number">91</b>
+        <img src="./126.jpg" alt="找死来唬秀" loading="lazy">
+        <span class="rank-info">
+            <strong>找死来唬秀</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="开局一座山2" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="种田，系统流，经营，权谋，搞笑" data-category="精选影库">
+    <a href="./movie-440.html" class="rank-link">
+        <b class="rank-number">92</b>
+        <img src="./140.jpg" alt="开局一座山2" loading="lazy">
+        <span class="rank-info">
+            <strong>开局一座山2</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="铳梦" data-year="2026" data-type="电影" data-region="美国/日本" data-tags="战斗天使，废铁镇，机甲术" data-category="喜剧欢乐">
+    <a href="./movie-445.html" class="rank-link">
+        <b class="rank-number">93</b>
+        <img src="./145.jpg" alt="铳梦" loading="lazy">
+        <span class="rank-info">
+            <strong>铳梦</strong>
+            <small>2026 · 美国/日本 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="六大寇" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="绿林，朝廷，替身，侠盗，反英雄" data-category="热播剧集">
+    <a href="./movie-452.html" class="rank-link">
+        <b class="rank-number">94</b>
+        <img src="./2.jpg" alt="六大寇" loading="lazy">
+        <span class="rank-info">
+            <strong>六大寇</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="万族之劫第二季" data-year="2026" data-type="动画 / 剧集" data-region="中国" data-tags="热血，人族崛起，升级流" data-category="精选影库">
+    <a href="./movie-454.html" class="rank-link">
+        <b class="rank-number">95</b>
+        <img src="./4.jpg" alt="万族之劫第二季" loading="lazy">
+        <span class="rank-info">
+            <strong>万族之劫第二季</strong>
+            <small>2026 · 中国 · 动画 / 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="燃烧的棕榈" data-year="2026" data-type="电影" data-region="法国 / 摩洛哥" data-tags="北非，家族黑帮，沙漠，宿命论" data-category="热播剧集">
+    <a href="./movie-465.html" class="rank-link">
+        <b class="rank-number">96</b>
+        <img src="./15.jpg" alt="燃烧的棕榈" loading="lazy">
+        <span class="rank-info">
+            <strong>燃烧的棕榈</strong>
+            <small>2026 · 法国 / 摩洛哥 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="美洲豹女儿" data-year="2026" data-type="电影" data-region="墨西哥 / 美国" data-tags="阿兹特克，身份认同，变身，女性力量" data-category="华语剧场">
+    <a href="./movie-484.html" class="rank-link">
+        <b class="rank-number">97</b>
+        <img src="./34.jpg" alt="美洲豹女儿" loading="lazy">
+        <span class="rank-info">
+            <strong>美洲豹女儿</strong>
+            <small>2026 · 墨西哥 / 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="野东西3" data-year="2026" data-type="电影" data-region="美国" data-tags="蛇蝎美人，连环骗局，继承案，迈阿密" data-category="动作冒险">
+    <a href="./movie-524.html" class="rank-link">
+        <b class="rank-number">98</b>
+        <img src="./74.jpg" alt="野东西3" loading="lazy">
+        <span class="rank-info">
+            <strong>野东西3</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="哈里什昌德拉国王" data-year="2026" data-type="电影" data-region="印度" data-tags="君主，牺牲，真理，史诗，古典印度" data-category="科幻奇幻">
+    <a href="./movie-530.html" class="rank-link">
+        <b class="rank-number">99</b>
+        <img src="./80.jpg" alt="哈里什昌德拉国王" loading="lazy">
+        <span class="rank-info">
+            <strong>哈里什昌德拉国王</strong>
+            <small>2026 · 印度 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="大鱼" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="父子和解，民间传说，超现实，温情，隐喻" data-category="精选影库">
+    <a href="./movie-552.html" class="rank-link">
+        <b class="rank-number">100</b>
+        <img src="./102.jpg" alt="大鱼" loading="lazy">
+        <span class="rank-info">
+            <strong>大鱼</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="法网追凶第二季" data-year="2026" data-type="电视剧" data-region="中国大陆" data-tags="本格推理，师徒双雄，全员恶人，高智商犯罪，社会议题" data-category="悬疑犯罪">
+    <a href="./movie-562.html" class="rank-link">
+        <b class="rank-number">101</b>
+        <img src="./112.jpg" alt="法网追凶第二季" loading="lazy">
+        <span class="rank-info">
+            <strong>法网追凶第二季</strong>
+            <small>2026 · 中国大陆 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="灵驹续集" data-year="2026" data-type="电影" data-region="英国" data-tags="白马，魔法，祖孙，守护，成长" data-category="动作冒险">
+    <a href="./movie-568.html" class="rank-link">
+        <b class="rank-number">102</b>
+        <img src="./118.jpg" alt="灵驹续集" loading="lazy">
+        <span class="rank-info">
+            <strong>灵驹续集</strong>
+            <small>2026 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="白暮的编年史" data-year="2026" data-type="剧集" data-region="日本" data-tags="吸血鬼，战国时代，永生者，史诗" data-category="爱情剧情">
+    <a href="./movie-604.html" class="rank-link">
+        <b class="rank-number">103</b>
+        <img src="./4.jpg" alt="白暮的编年史" loading="lazy">
+        <span class="rank-info">
+            <strong>白暮的编年史</strong>
+            <small>2026 · 日本 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="朕的刺客女友" data-year="2026" data-type="电视剧" data-region="中国大陆" data-tags="穿越，女刺客，沙雕甜宠，身份反转" data-category="科幻奇幻">
+    <a href="./movie-629.html" class="rank-link">
+        <b class="rank-number">104</b>
+        <img src="./29.jpg" alt="朕的刺客女友" loading="lazy">
+        <span class="rank-info">
+            <strong>朕的刺客女友</strong>
+            <small>2026 · 中国大陆 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="狄仁杰之通天谜案" data-year="2026" data-type="电影" data-region="中国内地" data-tags="狄仁杰，密室杀人，机关术，武则天" data-category="精选影库">
+    <a href="./movie-643.html" class="rank-link">
+        <b class="rank-number">105</b>
+        <img src="./43.jpg" alt="狄仁杰之通天谜案" loading="lazy">
+        <span class="rank-info">
+            <strong>狄仁杰之通天谜案</strong>
+            <small>2026 · 中国内地 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="恶夜追杀令3" data-year="2026" data-type="电影" data-region="美国" data-tags="暴力美学，复仇，限时救援，硬核" data-category="热播剧集">
+    <a href="./movie-644.html" class="rank-link">
+        <b class="rank-number">106</b>
+        <img src="./44.jpg" alt="恶夜追杀令3" loading="lazy">
+        <span class="rank-info">
+            <strong>恶夜追杀令3</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="疯狂原始人2" data-year="2026" data-type="动画电影" data-region="美国" data-tags="原始人，现代文明，家庭，笑料百出，续集" data-category="喜剧欢乐">
+    <a href="./movie-653.html" class="rank-link">
+        <b class="rank-number">107</b>
+        <img src="./53.jpg" alt="疯狂原始人2" loading="lazy">
+        <span class="rank-info">
+            <strong>疯狂原始人2</strong>
+            <small>2026 · 美国 · 动画电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="冰冻浩劫" data-year="2026" data-type="电影" data-region="美国" data-tags="气象武器，全球变冷，小队救援，特效大片" data-category="科幻奇幻">
+    <a href="./movie-655.html" class="rank-link">
+        <b class="rank-number">108</b>
+        <img src="./55.jpg" alt="冰冻浩劫" loading="lazy">
+        <span class="rank-info">
+            <strong>冰冻浩劫</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="百合熊风暴" data-year="2026" data-type="剧集" data-region="日本" data-tags="百合，反乌托邦，机甲，高燃战斗" data-category="悬疑犯罪">
+    <a href="./movie-698.html" class="rank-link">
+        <b class="rank-number">109</b>
+        <img src="./98.jpg" alt="百合熊风暴" loading="lazy">
+        <span class="rank-info">
+            <strong>百合熊风暴</strong>
+            <small>2026 · 日本 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="火星救援国语" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="太空救援，孤岛求生，硬科幻，团队协作" data-category="爱情剧情">
+    <a href="./movie-701.html" class="rank-link">
+        <b class="rank-number">110</b>
+        <img src="./101.jpg" alt="火星救援国语" loading="lazy">
+        <span class="rank-info">
+            <strong>火星救援国语</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="活死人黎明" data-year="2026" data-type="电影" data-region="美国" data-tags="末世求生，商场堡垒，人性博弈，硬核血浆" data-category="科幻奇幻">
+    <a href="./movie-708.html" class="rank-link">
+        <b class="rank-number">111</b>
+        <img src="./108.jpg" alt="活死人黎明" loading="lazy">
+        <span class="rank-info">
+            <strong>活死人黎明</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="复制闪灵娇妻" data-year="2026" data-type="电影" data-region="美国" data-tags="克隆人，恐怖片致敬，婚姻困境，精神控制" data-category="动作冒险">
+    <a href="./movie-722.html" class="rank-link">
+        <b class="rank-number">112</b>
+        <img src="./122.jpg" alt="复制闪灵娇妻" loading="lazy">
+        <span class="rank-info">
+            <strong>复制闪灵娇妻</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="西游之双圣战神" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="悟空，六耳猕猴，多维宇宙，赛博西游，双雄" data-category="科幻奇幻">
+    <a href="./movie-730.html" class="rank-link">
+        <b class="rank-number">113</b>
+        <img src="./130.jpg" alt="西游之双圣战神" loading="lazy">
+        <span class="rank-info">
+            <strong>西游之双圣战神</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="阿拉伯漂移2" data-year="2026" data-type="电影" data-region="沙特阿拉伯 / 阿联酋" data-tags="中东，超跑，街头飙车，家族复仇，视觉奇观" data-category="悬疑犯罪">
+    <a href="./movie-742.html" class="rank-link">
+        <b class="rank-number">114</b>
+        <img src="./142.jpg" alt="阿拉伯漂移2" loading="lazy">
+        <span class="rank-info">
+            <strong>阿拉伯漂移2</strong>
+            <small>2026 · 沙特阿拉伯 / 阿联酋 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="天空之城日版" data-year="2026" data-type="动画电影" data-region="日本" data-tags="重制版，蒸汽朋克，全明星声优" data-category="热播剧集">
+    <a href="./movie-747.html" class="rank-link">
+        <b class="rank-number">115</b>
+        <img src="./147.jpg" alt="天空之城日版" loading="lazy">
+        <span class="rank-info">
+            <strong>天空之城日版</strong>
+            <small>2026 · 日本 · 动画电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="被称为爸爸的女人" data-year="2026" data-type="电影" data-region="中国香港" data-tags="跨性别，父权解构，亲情，粤语片" data-category="爱情剧情">
+    <a href="./movie-749.html" class="rank-link">
+        <b class="rank-number">116</b>
+        <img src="./149.jpg" alt="被称为爸爸的女人" loading="lazy">
+        <span class="rank-info">
+            <strong>被称为爸爸的女人</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="土生子" data-year="2026" data-type="电影" data-region="美国" data-tags="黑人，芝加哥，种族，存在主义，文学改编" data-category="悬疑犯罪">
+    <a href="./movie-750.html" class="rank-link">
+        <b class="rank-number">117</b>
+        <img src="./150.jpg" alt="土生子" loading="lazy">
+        <span class="rank-info">
+            <strong>土生子</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="硬胶特警" data-year="2026" data-type="电影" data-region="香港" data-tags="机甲，香港街景，无厘头" data-category="华语剧场">
+    <a href="./movie-751.html" class="rank-link">
+        <b class="rank-number">118</b>
+        <img src="./1.jpg" alt="硬胶特警" loading="lazy">
+        <span class="rank-info">
+            <strong>硬胶特警</strong>
+            <small>2026 · 香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="男孩生活2" data-year="2026" data-type="剧集" data-region="法国" data-tags="青春期，身份认同，小镇，法式浪漫，成长" data-category="动作冒险">
+    <a href="./movie-754.html" class="rank-link">
+        <b class="rank-number">119</b>
+        <img src="./4.jpg" alt="男孩生活2" loading="lazy">
+        <span class="rank-info">
+            <strong>男孩生活2</strong>
+            <small>2026 · 法国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="青年医生" data-year="2026" data-type="电视剧" data-region="中国" data-tags="现实主义，新人成长，医患关系" data-category="动漫动画">
+    <a href="./movie-756.html" class="rank-link">
+        <b class="rank-number">120</b>
+        <img src="./6.jpg" alt="青年医生" loading="lazy">
+        <span class="rank-info">
+            <strong>青年医生</strong>
+            <small>2026 · 中国 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="乐丹西亚：魔法王国的传说" data-year="2026" data-type="电影" data-region="西班牙" data-tags="魔法王国，预言，女战士，史诗" data-category="科幻奇幻">
+    <a href="./movie-788.html" class="rank-link">
+        <b class="rank-number">121</b>
+        <img src="./38.jpg" alt="乐丹西亚：魔法王国的传说" loading="lazy">
+        <span class="rank-info">
+            <strong>乐丹西亚：魔法王国的传说</strong>
+            <small>2026 · 西班牙 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="太平间闹鬼事件" data-year="2026" data-type="电影" data-region="中国台湾" data-tags="太平间，守夜，纸扎人，丧葬禁忌，循环" data-category="热播剧集">
+    <a href="./movie-814.html" class="rank-link">
+        <b class="rank-number">122</b>
+        <img src="./64.jpg" alt="太平间闹鬼事件" loading="lazy">
+        <span class="rank-info">
+            <strong>太平间闹鬼事件</strong>
+            <small>2026 · 中国台湾 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="黑人为白人作战" data-year="2026" data-type="电影" data-region="美国" data-tags="南北战争，种族，身份认同，真实事件改编" data-category="悬疑犯罪">
+    <a href="./movie-825.html" class="rank-link">
+        <b class="rank-number">123</b>
+        <img src="./75.jpg" alt="黑人为白人作战" loading="lazy">
+        <span class="rank-info">
+            <strong>黑人为白人作战</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="凶相" data-year="2026" data-type="电影" data-region="中国香港" data-tags="整容，复仇，邪教，港风" data-category="精选影库">
+    <a href="./movie-826.html" class="rank-link">
+        <b class="rank-number">124</b>
+        <img src="./76.jpg" alt="凶相" loading="lazy">
+        <span class="rank-info">
+            <strong>凶相</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="全歼德寇于莫斯科城下" data-year="2026" data-type="电影" data-region="俄罗斯" data-tags="莫斯科保卫战，狙击手姐妹，虚构英雄" data-category="纪录人文">
+    <a href="./movie-834.html" class="rank-link">
+        <b class="rank-number">125</b>
+        <img src="./84.jpg" alt="全歼德寇于莫斯科城下" loading="lazy">
+        <span class="rank-info">
+            <strong>全歼德寇于莫斯科城下</strong>
+            <small>2026 · 俄罗斯 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="巅峰猎杀" data-year="2026" data-type="电影" data-region="美国 / 加拿大" data-tags="雪山，狙击手，复仇，极限生存，反杀" data-category="喜剧欢乐">
+    <a href="./movie-865.html" class="rank-link">
+        <b class="rank-number">126</b>
+        <img src="./115.jpg" alt="巅峰猎杀" loading="lazy">
+        <span class="rank-info">
+            <strong>巅峰猎杀</strong>
+            <small>2026 · 美国 / 加拿大 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="诅咒之城：玛雅" data-year="2026" data-type="电影" data-region="墨西哥" data-tags="考古，诅咒，丛林，古文明" data-category="动作冒险">
+    <a href="./movie-876.html" class="rank-link">
+        <b class="rank-number">127</b>
+        <img src="./126.jpg" alt="诅咒之城：玛雅" loading="lazy">
+        <span class="rank-info">
+            <strong>诅咒之城：玛雅</strong>
+            <small>2026 · 墨西哥 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="虎将艳后" data-year="2026" data-type="电影" data-region="中国香港" data-tags="女将，复仇，权谋，硬核武打，江湖" data-category="悬疑犯罪">
+    <a href="./movie-886.html" class="rank-link">
+        <b class="rank-number">128</b>
+        <img src="./136.jpg" alt="虎将艳后" loading="lazy">
+        <span class="rank-info">
+            <strong>虎将艳后</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="十八罗汉" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="少林，罗汉，江湖，结义，护国" data-category="热播剧集">
+    <a href="./movie-890.html" class="rank-link">
+        <b class="rank-number">129</b>
+        <img src="./140.jpg" alt="十八罗汉" loading="lazy">
+        <span class="rank-info">
+            <strong>十八罗汉</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="百鸟朝凤" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="唢呐，传承，师徒，绝唱" data-category="华语剧场">
+    <a href="./movie-891.html" class="rank-link">
+        <b class="rank-number">130</b>
+        <img src="./141.jpg" alt="百鸟朝凤" loading="lazy">
+        <span class="rank-info">
+            <strong>百鸟朝凤</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="调制青少年" data-year="2026" data-type="剧集" data-region="美国" data-tags="基因编辑，校园，伦理" data-category="悬疑犯罪">
+    <a href="./movie-912.html" class="rank-link">
+        <b class="rank-number">131</b>
+        <img src="./12.jpg" alt="调制青少年" loading="lazy">
+        <span class="rank-info">
+            <strong>调制青少年</strong>
+            <small>2026 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="巫术面具" data-year="2026" data-type="电影" data-region="尼日利亚 / 美国" data-tags="非洲巫毒，祖灵崇拜，连环诅咒，面具杀人魔，考古惊悚" data-category="爱情剧情">
+    <a href="./movie-922.html" class="rank-link">
+        <b class="rank-number">132</b>
+        <img src="./22.jpg" alt="巫术面具" loading="lazy">
+        <span class="rank-info">
+            <strong>巫术面具</strong>
+            <small>2026 · 尼日利亚 / 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="亚特兰蒂斯" data-year="2026" data-type="剧集" data-region="美国" data-tags="海底文明，考古，阴谋，史诗" data-category="纪录人文">
+    <a href="./movie-934.html" class="rank-link">
+        <b class="rank-number">133</b>
+        <img src="./34.jpg" alt="亚特兰蒂斯" loading="lazy">
+        <span class="rank-info">
+            <strong>亚特兰蒂斯</strong>
+            <small>2026 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="西楚霸王" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="楚汉争霸，英雄末路，乌江自刎，巨鹿之战" data-category="华语剧场">
+    <a href="./movie-937.html" class="rank-link">
+        <b class="rank-number">134</b>
+        <img src="./37.jpg" alt="西楚霸王" loading="lazy">
+        <span class="rank-info">
+            <strong>西楚霸王</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="雷射战队2" data-year="2026" data-type="电影" data-region="日本" data-tags="战队续集，成人向，装甲，政治阴谋，牺牲" data-category="悬疑犯罪">
+    <a href="./movie-950.html" class="rank-link">
+        <b class="rank-number">135</b>
+        <img src="./50.jpg" alt="雷射战队2" loading="lazy">
+        <span class="rank-info">
+            <strong>雷射战队2</strong>
+            <small>2026 · 日本 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="小屁孩战群妖" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="熊孩子，捉妖，爆笑" data-category="爱情剧情">
+    <a href="./movie-965.html" class="rank-link">
+        <b class="rank-number">136</b>
+        <img src="./65.jpg" alt="小屁孩战群妖" loading="lazy">
+        <span class="rank-info">
+            <strong>小屁孩战群妖</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="重返二叠纪" data-year="2026" data-type="电影" data-region="美国" data-tags="时空穿越，古生物，异世界，氧气浓度，巨型昆虫" data-category="华语剧场">
+    <a href="./movie-970.html" class="rank-link">
+        <b class="rank-number">137</b>
+        <img src="./70.jpg" alt="重返二叠纪" loading="lazy">
+        <span class="rank-info">
+            <strong>重返二叠纪</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="牺牲" data-year="2026" data-type="电影" data-region="俄罗斯" data-tags="二战，神父，修道院，忏悔，人性" data-category="悬疑犯罪">
+    <a href="./movie-973.html" class="rank-link">
+        <b class="rank-number">138</b>
+        <img src="./73.jpg" alt="牺牲" loading="lazy">
+        <span class="rank-info">
+            <strong>牺牲</strong>
+            <small>2026 · 俄罗斯 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="红色八爪女" data-year="2026" data-type="电影" data-region="中国香港" data-tags="女特工，八爪鱼，器官走私" data-category="科幻奇幻">
+    <a href="./movie-986.html" class="rank-link">
+        <b class="rank-number">139</b>
+        <img src="./86.jpg" alt="红色八爪女" loading="lazy">
+        <span class="rank-info">
+            <strong>红色八爪女</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="山火" data-year="2026" data-type="电影" data-region="美国" data-tags="wildfire，气候危机，家庭救赎，限时逃生" data-category="华语剧场">
+    <a href="./movie-1010.html" class="rank-link">
+        <b class="rank-number">140</b>
+        <img src="./110.jpg" alt="山火" loading="lazy">
+        <span class="rank-info">
+            <strong>山火</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="囧女翻身之嗨如花" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="逆袭，娱乐圈，元气少女" data-category="华语剧场">
+    <a href="./movie-1015.html" class="rank-link">
+        <b class="rank-number">141</b>
+        <img src="./115.jpg" alt="囧女翻身之嗨如花" loading="lazy">
+        <span class="rank-info">
+            <strong>囧女翻身之嗨如花</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="最后的乘客" data-year="2026" data-type="电影" data-region="英国" data-tags="星际列车，密闭空间，人工智能叛乱，记忆植入，阶级隐喻" data-category="喜剧欢乐">
+    <a href="./movie-1019.html" class="rank-link">
+        <b class="rank-number">142</b>
+        <img src="./119.jpg" alt="最后的乘客" loading="lazy">
+        <span class="rank-info">
+            <strong>最后的乘客</strong>
+            <small>2026 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="浪漫缆车升空中" data-year="2026" data-type="电影" data-region="韩国" data-tags="困于高空，治愈，社恐，极限" data-category="热播剧集">
+    <a href="./movie-1061.html" class="rank-link">
+        <b class="rank-number">143</b>
+        <img src="./11.jpg" alt="浪漫缆车升空中" loading="lazy">
+        <span class="rank-info">
+            <strong>浪漫缆车升空中</strong>
+            <small>2026 · 韩国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="没有妳的多重宇宙" data-year="2026" data-type="电影" data-region="中国香港" data-tags="平行宇宙，失去，执念，选择" data-category="华语剧场">
+    <a href="./movie-1079.html" class="rank-link">
+        <b class="rank-number">144</b>
+        <img src="./29.jpg" alt="没有妳的多重宇宙" loading="lazy">
+        <span class="rank-info">
+            <strong>没有妳的多重宇宙</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="收视大骑劫" data-year="2026" data-type="电影" data-region="韩国" data-tags="直播，人质，实时，媒体批判，极限反转" data-category="精选影库">
+    <a href="./movie-1085.html" class="rank-link">
+        <b class="rank-number">145</b>
+        <img src="./35.jpg" alt="收视大骑劫" loading="lazy">
+        <span class="rank-info">
+            <strong>收视大骑劫</strong>
+            <small>2026 · 韩国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="克利夫的一切" data-year="2026" data-type="电影" data-region="美国" data-tags="AI管家，全能助手，依赖，失控，人性" data-category="华语剧场">
+    <a href="./movie-1109.html" class="rank-link">
+        <b class="rank-number">146</b>
+        <img src="./59.jpg" alt="克利夫的一切" loading="lazy">
+        <span class="rank-info">
+            <strong>克利夫的一切</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="结束，开始" data-year="2026" data-type="电影" data-region="法国" data-tags="婚姻危机，多线叙事，哲学，时间循环" data-category="动漫动画">
+    <a href="./movie-1114.html" class="rank-link">
+        <b class="rank-number">147</b>
+        <img src="./64.jpg" alt="结束，开始" loading="lazy">
+        <span class="rank-info">
+            <strong>结束，开始</strong>
+            <small>2026 · 法国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="铁金刚勇破神秘岛" data-year="2026" data-type="电影" data-region="英国" data-tags="007风格，神秘岛，克隆军团，海底基地" data-category="爱情剧情">
+    <a href="./movie-1122.html" class="rank-link">
+        <b class="rank-number">148</b>
+        <img src="./72.jpg" alt="铁金刚勇破神秘岛" loading="lazy">
+        <span class="rank-info">
+            <strong>铁金刚勇破神秘岛</strong>
+            <small>2026 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="康乃狄克鬼屋事件" data-year="2026" data-type="电影" data-region="美国" data-tags="伪纪录片，灵媒，家族诅咒" data-category="科幻奇幻">
+    <a href="./movie-1129.html" class="rank-link">
+        <b class="rank-number">149</b>
+        <img src="./79.jpg" alt="康乃狄克鬼屋事件" loading="lazy">
+        <span class="rank-info">
+            <strong>康乃狄克鬼屋事件</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="傲蕾·一兰" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="达斡尔族，女英雄，古代战争，抗争史诗" data-category="动作冒险">
+    <a href="./movie-1143.html" class="rank-link">
+        <b class="rank-number">150</b>
+        <img src="./93.jpg" alt="傲蕾·一兰" loading="lazy">
+        <span class="rank-info">
+            <strong>傲蕾·一兰</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="龙卷风3：上帝的怒火" data-year="2026" data-type="电影" data-region="美国" data-tags="龙卷风，末日，气象武器，视觉奇观" data-category="华语剧场">
+    <a href="./movie-1161.html" class="rank-link">
+        <b class="rank-number">151</b>
+        <img src="./111.jpg" alt="龙卷风3：上帝的怒火" loading="lazy">
+        <span class="rank-info">
+            <strong>龙卷风3：上帝的怒火</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="倾物语" data-year="2026" data-type="动画电影" data-region="日本" data-tags="怪谈，时间回溯，物语系列精神续作" data-category="精选影库">
+    <a href="./movie-1164.html" class="rank-link">
+        <b class="rank-number">152</b>
+        <img src="./114.jpg" alt="倾物语" loading="lazy">
+        <span class="rank-info">
+            <strong>倾物语</strong>
+            <small>2026 · 日本 · 动画电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="海豚的故事2" data-year="2026" data-type="电影" data-region="澳大利亚" data-tags="海洋保育，海豚语言，母女传承，非法捕鱼" data-category="精选影库">
+    <a href="./movie-1170.html" class="rank-link">
+        <b class="rank-number">153</b>
+        <img src="./120.jpg" alt="海豚的故事2" loading="lazy">
+        <span class="rank-info">
+            <strong>海豚的故事2</strong>
+            <small>2026 · 澳大利亚 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="海底长征" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="深海，长征，硬科幻，集体主义，求生" data-category="爱情剧情">
+    <a href="./movie-1176.html" class="rank-link">
+        <b class="rank-number">154</b>
+        <img src="./126.jpg" alt="海底长征" loading="lazy">
+        <span class="rank-info">
+            <strong>海底长征</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="小公主苏菲亚" data-year="2026" data-type="剧集" data-region="美国" data-tags="平行世界，魔法宝石，友谊" data-category="热播剧集">
+    <a href="./movie-1197.html" class="rank-link">
+        <b class="rank-number">155</b>
+        <img src="./147.jpg" alt="小公主苏菲亚" loading="lazy">
+        <span class="rank-info">
+            <strong>小公主苏菲亚</strong>
+            <small>2026 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="追查 第一章" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="连环杀人，暗网，本格推理，双男主" data-category="科幻奇幻">
+    <a href="./movie-1204.html" class="rank-link">
+        <b class="rank-number">156</b>
+        <img src="./4.jpg" alt="追查 第一章" loading="lazy">
+        <span class="rank-info">
+            <strong>追查 第一章</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="玫瑰之战" data-year="2026" data-type="电视剧" data-region="中国大陆" data-tags="女律师，中年觉醒，职场逆袭，独立女性" data-category="精选影库">
+    <a href="./movie-1208.html" class="rank-link">
+        <b class="rank-number">157</b>
+        <img src="./8.jpg" alt="玫瑰之战" loading="lazy">
+        <span class="rank-info">
+            <strong>玫瑰之战</strong>
+            <small>2026 · 中国大陆 · 电视剧</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="憨豆先生的大灾难" data-year="2026" data-type="电影" data-region="英国" data-tags="憨豆，英式幽默，核电站，乌龙，全球直播" data-category="动漫动画">
+    <a href="./movie-1229.html" class="rank-link">
+        <b class="rank-number">158</b>
+        <img src="./29.jpg" alt="憨豆先生的大灾难" loading="lazy">
+        <span class="rank-info">
+            <strong>憨豆先生的大灾难</strong>
+            <small>2026 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="窗外是蓝星" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="太空站，亲情，地球观测，软科幻" data-category="纪录人文">
+    <a href="./movie-1270.html" class="rank-link">
+        <b class="rank-number">159</b>
+        <img src="./70.jpg" alt="窗外是蓝星" loading="lazy">
+        <span class="rank-info">
+            <strong>窗外是蓝星</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="危险的追缠" data-year="2026" data-type="剧集" data-region="韩国" data-tags="跟踪狂，心理战，女性安全，反杀" data-category="华语剧场">
+    <a href="./movie-1272.html" class="rank-link">
+        <b class="rank-number">160</b>
+        <img src="./72.jpg" alt="危险的追缠" loading="lazy">
+        <span class="rank-info">
+            <strong>危险的追缠</strong>
+            <small>2026 · 韩国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="僵粤语" data-year="2026" data-type="电影" data-region="中国香港" data-tags="僵尸片，粤语片场，元电影，致敬林正英" data-category="华语剧场">
+    <a href="./movie-1326.html" class="rank-link">
+        <b class="rank-number">161</b>
+        <img src="./126.jpg" alt="僵粤语" loading="lazy">
+        <span class="rank-info">
+            <strong>僵粤语</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="帕罗奥图年少" data-year="2026" data-type="剧集" data-region="美国" data-tags="硅谷，富二代，迷茫，阶级" data-category="热播剧集">
+    <a href="./movie-1331.html" class="rank-link">
+        <b class="rank-number">162</b>
+        <img src="./131.jpg" alt="帕罗奥图年少" loading="lazy">
+        <span class="rank-info">
+            <strong>帕罗奥图年少</strong>
+            <small>2026 · 美国 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="化身博士" data-year="2026" data-type="电影" data-region="英国" data-tags="双重人格，基因编辑，伦敦，道德困境，变身" data-category="动漫动画">
+    <a href="./movie-1332.html" class="rank-link">
+        <b class="rank-number">163</b>
+        <img src="./132.jpg" alt="化身博士" loading="lazy">
+        <span class="rank-info">
+            <strong>化身博士</strong>
+            <small>2026 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="魔发奇缘：剧集版第三季" data-year="2026" data-type="动画剧集" data-region="美国" data-tags="迪士尼，公主，魔法，长发，续作" data-category="纪录人文">
+    <a href="./movie-1335.html" class="rank-link">
+        <b class="rank-number">164</b>
+        <img src="./135.jpg" alt="魔发奇缘：剧集版第三季" loading="lazy">
+        <span class="rank-info">
+            <strong>魔发奇缘：剧集版第三季</strong>
+            <small>2026 · 美国 · 动画剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="血红黎明" data-year="2026" data-type="电影" data-region="美国" data-tags="巷战，童子军，红色天象，生存射击" data-category="科幻奇幻">
+    <a href="./movie-1339.html" class="rank-link">
+        <b class="rank-number">165</b>
+        <img src="./139.jpg" alt="血红黎明" loading="lazy">
+        <span class="rank-info">
+            <strong>血红黎明</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="衰弱症" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="近未来，病毒变异，心理惊悚，社会隐喻，记忆崩塌" data-category="华语剧场">
+    <a href="./movie-1344.html" class="rank-link">
+        <b class="rank-number">166</b>
+        <img src="./144.jpg" alt="衰弱症" loading="lazy">
+        <span class="rank-info">
+            <strong>衰弱症</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="民主青年进行曲" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="民国，学生运动，理想主义，友谊" data-category="动漫动画">
+    <a href="./movie-1367.html" class="rank-link">
+        <b class="rank-number">167</b>
+        <img src="./17.jpg" alt="民主青年进行曲" loading="lazy">
+        <span class="rank-info">
+            <strong>民主青年进行曲</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="湿透了" data-year="2026" data-type="电影" data-region="英国" data-tags="洪水，摩天楼，密闭空间，阶级" data-category="动作冒险">
+    <a href="./movie-1368.html" class="rank-link">
+        <b class="rank-number">168</b>
+        <img src="./18.jpg" alt="湿透了" loading="lazy">
+        <span class="rank-info">
+            <strong>湿透了</strong>
+            <small>2026 · 英国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="亡者之妻" data-year="2026" data-type="电影" data-region="德国" data-tags="诈死，骗保，反转，婚姻" data-category="动漫动画">
+    <a href="./movie-1383.html" class="rank-link">
+        <b class="rank-number">169</b>
+        <img src="./33.jpg" alt="亡者之妻" loading="lazy">
+        <span class="rank-info">
+            <strong>亡者之妻</strong>
+            <small>2026 · 德国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="青之驱魔师 剧场版" data-year="2026" data-type="电影" data-region="日本" data-tags="兄弟羁绊，梵蒂冈阴谋，恶魔契约，神魔大战" data-category="精选影库">
+    <a href="./movie-1384.html" class="rank-link">
+        <b class="rank-number">170</b>
+        <img src="./34.jpg" alt="青之驱魔师 剧场版" loading="lazy">
+        <span class="rank-info">
+            <strong>青之驱魔师 剧场版</strong>
+            <small>2026 · 日本 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="忍者龟：变种新任务" data-year="2026" data-type="电影" data-region="美国" data-tags="CG动画，超级英雄，青少年" data-category="动漫动画">
+    <a href="./movie-1391.html" class="rank-link">
+        <b class="rank-number">171</b>
+        <img src="./41.jpg" alt="忍者龟：变种新任务" loading="lazy">
+        <span class="rank-info">
+            <strong>忍者龟：变种新任务</strong>
+            <small>2026 · 美国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="直到世界边缘" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="徒步，极地，生命意义，友情" data-category="喜剧欢乐">
+    <a href="./movie-1424.html" class="rank-link">
+        <b class="rank-number">172</b>
+        <img src="./74.jpg" alt="直到世界边缘" loading="lazy">
+        <span class="rank-info">
+            <strong>直到世界边缘</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="一起同过窗第三季" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="青春，校园，群像" data-category="喜剧欢乐">
+    <a href="./movie-1434.html" class="rank-link">
+        <b class="rank-number">173</b>
+        <img src="./84.jpg" alt="一起同过窗第三季" loading="lazy">
+        <span class="rank-info">
+            <strong>一起同过窗第三季</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="十二生肖传奇" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="神话，生肖，团队，上古，灵力" data-category="纪录人文">
+    <a href="./movie-1436.html" class="rank-link">
+        <b class="rank-number">174</b>
+        <img src="./86.jpg" alt="十二生肖传奇" loading="lazy">
+        <span class="rank-info">
+            <strong>十二生肖传奇</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="黑白无双第一季" data-year="2026" data-type="剧集" data-region="中国大陆" data-tags="国风，地府，双男主，打斗流畅，神话改编" data-category="科幻奇幻">
+    <a href="./movie-1440.html" class="rank-link">
+        <b class="rank-number">175</b>
+        <img src="./90.jpg" alt="黑白无双第一季" loading="lazy">
+        <span class="rank-info">
+            <strong>黑白无双第一季</strong>
+            <small>2026 · 中国大陆 · 剧集</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="母女的世界" data-year="2026" data-type="电影" data-region="韩国" data-tags="身体互换，代际冲突，职场母亲，校园生活" data-category="喜剧欢乐">
+    <a href="./movie-1453.html" class="rank-link">
+        <b class="rank-number">176</b>
+        <img src="./103.jpg" alt="母女的世界" loading="lazy">
+        <span class="rank-info">
+            <strong>母女的世界</strong>
+            <small>2026 · 韩国 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="天衣行动" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="民国，奇技淫巧，密室破局" data-category="热播剧集">
+    <a href="./movie-1456.html" class="rank-link">
+        <b class="rank-number">177</b>
+        <img src="./106.jpg" alt="天衣行动" loading="lazy">
+        <span class="rank-info">
+            <strong>天衣行动</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="终极快递" data-year="2026" data-type="电影" data-region="中国香港" data-tags="飙车，黑吃黑，限时任务" data-category="动作冒险">
+    <a href="./movie-1471.html" class="rank-link">
+        <b class="rank-number">178</b>
+        <img src="./121.jpg" alt="终极快递" loading="lazy">
+        <span class="rank-info">
+            <strong>终极快递</strong>
+            <small>2026 · 中国香港 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="开启玉盒时" data-year="2026" data-type="电影" data-region="中国大陆" data-tags="考古，时间循环，末日，烧脑" data-category="喜剧欢乐">
+    <a href="./movie-1473.html" class="rank-link">
+        <b class="rank-number">179</b>
+        <img src="./123.jpg" alt="开启玉盒时" loading="lazy">
+        <span class="rank-info">
+            <strong>开启玉盒时</strong>
+            <small>2026 · 中国大陆 · 电影</small>
+        </span>
+    </a>
+</article><article class="rank-card movie-card" data-title="蝴蝶大冒险" data-year="2026" data-type="动画电影" data-region="日本" data-tags="微观世界，成长寓言，手绘美学" data-category="悬疑犯罪">
+    <a href="./movie-1478.html" class="rank-link">
+        <b class="rank-number">180</b>
+        <img src="./128.jpg" alt="蝴蝶大冒险" loading="lazy">
+        <span class="rank-info">
+            <strong>蝴蝶大冒险</strong>
+            <small>2026 · 日本 · 动画电影</small>
+        </span>
+    </a>
+</article>
+    </section>
+    <div class="empty-state">没有找到匹配的影片</div>
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <strong>国产影视资源库</strong>
+            <p>国产电影电视剧大全平台，提供免费高清在线观看服务，资源涵盖最新上映影片及经典热播剧集，片库持续扩充，播放流畅，观影便捷。</p>
+        </div>
+        <nav><a href="./category-featured.html">精选影库</a><a href="./category-domestic.html">华语剧场</a><a href="./category-series.html">热播剧集</a><a href="./category-action.html">动作冒险</a><a href="./category-romance.html">爱情剧情</a><a href="./category-suspense.html">悬疑犯罪</a></nav>
+    </div>
+    <p class="copyright">© 2026 国产影视资源库 · 高清电影电视剧在线观看</p>
+</footer>
+<script src="./assets/site.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
